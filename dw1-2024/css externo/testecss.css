@@ -1,0 +1,16 @@
+h1{
+    color: darkcyan;
+    background-color: darkslategray;
+    text-align: center;
+}
+p{
+    color: darkslategray;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span{
+    color: darkred;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
