@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iara</title>
+
+    <style>
+        /* tanto a tag body quanto a tag asterisco servem para catacterizar algo comum para todos os elementos do site */
+        body{
+            background-color: lightblue;
+        }
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: small;
+        }
+        /* quando vc usa a tag igual se usa no body vc diz que todas aquelas tags receberão as mesmas características */
+        h1{
+            color: darkslategray;background-color: cadetblue;font-family: cursive;font-size: x-large;
+        }
+        /* o hashtag é pra identificar o id. o id serve apenas pra uma coisa, é uma característica única de uma tag*/
+        #tit1{
+            color: rgb(65, 201, 201);
+        }
+        /* o ponto é pra identificar uma classe. uma tag pode ter várias classes */
+        .destaquinho{
+            color:darkcyan
+        }
+        .parag{
+            background-color: darkslategray;
+        }
+        .fund{
+            color: azure;
+        }
+        /* o span só serve pra uma palavra. quando vc quer colocar duas palavras ou mais, precisa repetir a tag em cada palavra */
+        span{
+            font-weight: bold;
+        }
+        /* o div é pra vc criar uma divisão. vc coloca o seu título e seus parágrafos dentro (por exemplo) e depois coloca uma característica que vai ser aplicada na divisão inteira (por exemplo uma borda ou uma cor de fundo) */
+        div{
+            border: solid 2px; border-color: darkslategrey; background-color: lightcyan;
+        }
+        /* aqui embaixo eu selecionei todos os paragrafos (p) que possuem a classe destaquinho e dei uma nova característica a eles (cor de fundo) */
+        p.destaquinho{
+            background-color: azure;
+        }
+        /* aqui eu selecionei tds os parágrafos que tem a classe destaquinho e o id tit1 */
+        p.destaquinho#tit1{
+            border: solid 2px; border-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tit1">Iara e seus irmãos</h1>
+
+    <p class="parag fund">Reza a lenda que a Iara era uma corajosa guerreira dona de uma <span>beleza</span> invejável. Por esse motivo, os irmãos sentiam <span>inveja</span> dela e resolvem matá-la.
+    Todavia, no momento do combate, pelo fato de possuir habilidades guerreiras, Iara consegue inverter a situação e acaba matando seus irmãos.</p>
+
+    <div><h1>Iara e os homens</h1>
+
+        <p>Diante disso, com muito medo da punição de seu pai, o pajé da tribo, Iara resolve fugir, mas seu pai consegue encontrá-la. Como castigo pela morte dos irmãos, ele resolve lançá-la ao rio.
+        Os peixes do rio resolvem salvar a bela jovem transformando-a na <span>sereia</span> Iara. Desde então, Iara habita os rios amazônicos conquistando homens e depois levando-os ao fundo do rio, os quais morrem afogados.
+        Acredita-se que se o homem consegue escapar dos encantos de Iara ele fica <span>louco</span>, num estado de torpor e somente um pajé poderá curá-lo.</p></div>
+
+    <p class="destaquinho" contenteditable="true">O que achou da história?</p>
+
+    <p class="destaquinho" id="tit1">Veja mais sobre a história dos personagens do folclore brasileiro em nossos sites! </p>
+
+    <h3 class="destaquinho">Você pode se interessar por:</h3>
+
+    <a href="../../index.html"><button>História do Pinguim</button></a>
+
+</body>
+</html>
