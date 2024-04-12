@@ -1,0 +1,26 @@
+*{
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+    color: #4c4cd0;
+}
+h2{
+    color: rgb(55, 68, 149);
+}
+.sub{
+    text-decoration: underline;
+}
+.formula{
+    border: solid 2px;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(78, 96, 214);
+    color: darkblue;
+}
+strong{
+    background-color: lightblue;
+}
+sup{
+    background-color: rgb(78, 96, 214);
+}
