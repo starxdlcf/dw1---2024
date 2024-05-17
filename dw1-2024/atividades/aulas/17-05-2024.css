@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* a fronteira entre as caixas é a própria borda delas */
+}
+
+div.container{
+    background-color: rgb(218, 215, 205);
+    /* o vh é a altura do site na tela q vc ta acessando ele (em porcentagem) */
+    height: 100vh;
+    /* o vw é a largura do site na tela q vc ta acessando ele (em porcentagem) */
+    width: 100vw;
+    margin-top: 10px;
+}
+
+div.cabecalho{
+    background-color: rgb(163, 177, 138);
+    height: 100vh;
+    width: 100%;
+}
+
+div#secao1{
+    background-color: rgb(88, 129, 87);
+    height: 100vh;
+    width: 100%;
+}
+
+div#secao2{
+    background-color: rgb(58, 90, 64);
+    height: 100vh;
+    width: 100%;
+}
+
+ul.menu{
+    text-align: center;
+}
+
+ul.menu li{
+    list-style: none;
+}
+
+ul.menu li{
+    width: 120px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+a{
+ 
+    color: white; 
+     
+}
+
+a:hover{
+    
+    color: black;
+}
+
+ul.menu li:hover{
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+}
