@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas e Unidades</title>
+
+<style>
+    /* O REM serve para ajustar o texto conforme a fonte padrão do navegador */
+    /* já o EM ajusta os elementos com base no "pai" */
+
+    .container{
+        background-color: gray;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2.5rem;
+    }
+
+
+    .flexbox {display: flex;
+        /* justify content serve p alinhar os elementos no eixo principal (o x geralmente)*/
+        /* o space between e o space around colocam espaço entre os elementos. */
+        /* o between coloca espaço apenas entre as boxes */
+        /* o around coloca espaço também entre a borda do site e a caixa (é um espaço ao redor da caixa, logo, pega todos os lados dela) */
+        justify-content: space-between;
+        /* align-items serve p alinhar os elementos no eixo Y */
+        align-items: center; 
+        /* o flex wrap faz com que os elementos quebrem a linha  */
+        flex-wrap: wrap;
+        /* o flex direction muda a ordem dos eixos: agr o eixo principal é o y, nao o x */
+        flex-direction: column;
+    }
+
+
+    .box {
+        background-color: rebeccapurple;
+        border: .0625rem solid black;
+        width: 100px;
+        height: 100px;
+        color: white;
+        justify-content: center;
+    }
+
+    .bg-azul{
+        background-color: blue;
+    }
+    .bg-vermelho{
+        background-color: red;
+    }
+    .bg-verde{
+        background-color: green;
+    }
+    .bg-preto{
+        background-color: black;
+    }
+  
+</style>
+
+</head>
+<body>
+    
+    <div class="container flexbox">
+        <div class="box bg-vermelho flexbox">1</div>
+        <div class="box bg-azul flexbox">2</div>
+        <div class="box bg-verde flexbox">3</div>
+        <div class="box bg-preto flexbox">4</div>
+    </div>
+
+</body>
+</html>
