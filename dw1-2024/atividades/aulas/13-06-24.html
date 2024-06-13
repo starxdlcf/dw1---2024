@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gaps</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            /* o gap serve pra colocar um espaço entre os elementos dentro do container */
+            gap: 10px;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            align-content: center;
+        }
+
+        .box1{
+            background-color: green;
+            /* o order é p colocar ordem de aparecimento dos ítens (ordem de importância) */
+            order: 1;
+            /* o flex-grow preenche os espaços da tela p preencher tudo e n deixar espaço sobrando */
+            flex-grow: 1;
+        }
+
+        .box2{
+            background-color: blue;
+            order: 2;
+            flex-grow: 1;
+            /* o flex-shrink nos diz a capacidade de encolhimento caso a tela fique menor ou maior (em comparação com os irmãos) */
+            /* nesse exemplo de flex-shrink, ele vai encolher duas vezes mais que os outros dois boxes pq o fator encolhimento dele é 2 e o dos irmãos é 1  */
+            flex-shrink: 3;
+            align-self: flex-end;
+
+        }
+
+        .box3{
+            background-color: red;
+            order: 2;
+            flex-grow: 2;
+
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box3"></div>
+        <div class="box box2"></div>
+    </div>
+    
+</body>
+</html>
