@@ -6,10 +6,31 @@
     <title>artigo</title>
 
 <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+   
+
+
+
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+    }
+
+    :root{
+            --cormenu: rgb(114, 158, 161);
+            --corhome: rgb(159, 189, 160);
+            --cor1: rgb(181, 189, 137);
+            --cor2: rgb(223, 190, 153);
+            --cor3: rgb(230, 168, 150);
+            --cor4: rgb(236, 145, 146);
+            --corbotao: rgb(85, 118, 120);
+            --corlogo: 
+            
+            --titulos: "Playfair Display";
+            --logo: "Parisienne";
     }
 
     html{
@@ -24,27 +45,52 @@
        display: inline-block; 
     }
 
-    .menu{
+    .logo{
         border: .0625rem;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        margin-left: 10vw;
-        height: 5rem;
-        width: 80vw;
-        background-color: rgb(114, 158, 161);
+        height: 64px;
+        width: 100vw;
+        background-color: var(--corbotao);
+        position: fixed;
+        font-family: var(--logo);
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: antiquewhite;
+    }
+
+    .menu{
+        border: 1px;
+        margin-top: 64px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-left: 18vw;
+        height: 56px;
+        width: 60vw;
+        background-color: var(--cormenu);
         position: fixed;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.25rem;
+    }
+
+    .line{
+        border: .0625rem solid var(--cormenu);
+        margin-top: 64px;
+        height: .0625rem;
+        width: 100vw;
+        position: fixed;
     }
 
     .botao{
-        border: 1px solid rgb(85, 118, 120);
-        border-radius: 5px;
-        width: 7rem;
+        border: .0625rem solid rgb(85, 118, 120);
+        border-radius: .3125rem;
+        width: 96px;
         text-align: center;
-        background-color: rgb(85, 118, 120);
+        background-color: var(--corbotao);
+        font-family: var(--titulos);
+        font-size: 19.2px
     }
 
     li a{
@@ -54,49 +100,72 @@
 
     .menu .botao:hover{
         transition: 0.5s;
-        color: white;
+        color: antiquewhite;
         background-color: black;
     }
     
     li a{
         transition: 0.5s;
-        color: white;
+        color: antiquewhite;
     }
 
     #home{
-        border: 1px  black;
+        border: .0625rem;
         height: 100vh;
         width: 100vw;
-        background-color: rgb(159, 189, 160);
+        background-image: url(https://www.800flower.ae/cdn/shop/articles/find-a-flower-shop-near-me-your-local-blooms-await-800-flower-dubai_1.jpg?v=1690118782);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
+        
+
     #secao1{
-        border: 1px  black;
+        border: .0625rem;
         height: 100vh;
         width: 100vw;
-        background-color: rgb(181, 189, 137);
+        padding-top: 128px;
+        background-color: var(--cor1)
     }
 
     #secao2{
-        border: 1px solid black;
+        border: .0625rem;
         height: 100vh;
         width: 100vw;
-        background-color: rgb(223, 190, 153);
+        padding-top: 128px;
+        background-color: var(--cor2)
     }
 
     #secao3{
-        border: 1px black;
+        border: .0625rem;
         height: 100vh;
         width: 100vw;
-        background-color: rgb(230, 168, 150);
+        padding-top: 128px;
+        background-color: var(--cor3)
     }
 
     #contatos{
-        border: 1px solid black;
-        height: 100vh;
+        border: .0625rem;
+        height: 15vh;
         width: 100vw;
-        background-color: rgb(236, 145, 146);
+        background-color: var(--cor4)
     }
+
+    .descricao{
+        border: 1px;
+        border-radius: 1rem;
+        height: 15vh;
+        width: 80vw;
+        background-color: rgba(250, 235, 215, 0.250);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10rem;
+        line-height: 25px;
+    }
+
 </style>
 </head>
 <body>
@@ -109,8 +178,16 @@
             <li class="botao"><a href="#secao3">seção 3</a></li>
             <li class="botao"><a href="#contatos">contatos</a></li>
         </ul>
+        <div class="logo">
+            <h1>Cantinho das Flores</h1>
+        </div>
+        <div class="line"></div>
         <div id="home"></div>
-        <div id="secao1"></div>
+        <div id="secao1">
+            <h2>Quem somos?</h2>
+
+            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere earum odit doloremque explicabo nemo officiis voluptatem tempore. Labore reiciendis voluptate et placeat aperiam alias velit molestias, nulla aliquid vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate voluptatibus ut voluptates magnam explicabo debitis blanditiis recusandae modi dignissimos aut suscipit cum, totam quia reiciendis harum ab possimus. Porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident obcaecati, enim est reiciendis harum minima dolor quos accusantium eum, quia voluptatum amet cupiditate? Placeat provident delectus incidunt reprehenderit quam?</p>
+        </div>
         <div id="secao2"></div>
         <div id="secao3"></div>
         <div id="contatos">/</div>
