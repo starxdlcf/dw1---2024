@@ -11,8 +11,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
    
 
-
-
     *{
         padding: 0;
         margin: 0;
@@ -58,6 +56,7 @@
         justify-content: center;
         color: antiquewhite;
     }
+
 
     .menu{
         border: 1px;
@@ -166,11 +165,24 @@
         line-height: 25px;
     }
 
+    .subtitulo{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 2rem;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    #s1{
+        color: rgb(90, 119, 75);
+    }
+
 </style>
 </head>
 <body>
 
-    <div class="container">
+    <div id="obt" class="container">
         <ul class="menu">
             <li class="botao"><a href="#home">home</a></li>
             <li class="botao"><a href="#secao1">seção 1</a></li>
@@ -184,14 +196,14 @@
         <div class="line"></div>
         <div id="home"></div>
         <div id="secao1">
-            <h2>Quem somos?</h2>
+            <h2 id="s1" class="subtitulo">Quem somos?</h2>
 
             <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere earum odit doloremque explicabo nemo officiis voluptatem tempore. Labore reiciendis voluptate et placeat aperiam alias velit molestias, nulla aliquid vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate voluptatibus ut voluptates magnam explicabo debitis blanditiis recusandae modi dignissimos aut suscipit cum, totam quia reiciendis harum ab possimus. Porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident obcaecati, enim est reiciendis harum minima dolor quos accusantium eum, quia voluptatum amet cupiditate? Placeat provident delectus incidunt reprehenderit quam?</p>
         </div>
         <div id="secao2"></div>
         <div id="secao3"></div>
-        <div id="contatos">/</div>
     </div>
+    <div id="contatos">/</div>
     
 </body>
 </html>
