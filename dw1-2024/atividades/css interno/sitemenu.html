@@ -16,6 +16,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     :root{
@@ -56,6 +57,13 @@
         align-items: center;
         justify-content: center;
         color: antiquewhite;
+    }
+
+    #pginicial{
+        font-family: var(--logo);
+        font-size: 6rem;
+        color: blanchedalmond;
+        text-shadow: 5px 5px black;
     }
 
 
@@ -117,6 +125,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
         
@@ -126,7 +137,8 @@
         height: 100vh;
         width: 100vw;
         padding-top: 128px;
-        background-color: var(--cor1)
+        background-color: var(--cor1);
+        display: flex;
     }
 
     #secao2{
@@ -144,7 +156,7 @@
         height: 100vh;
         width: 100vw;
         padding-top: 128px;
-        background-color: var(--cor3)
+        background-color: var(--cor3);
     }
 
     #contatos{
@@ -169,26 +181,43 @@
     .descricao{
         border: 1px;
         border-radius: 1rem;
-        height: 15vh;
-        width: 80vw;
+        height: 50vh;
+        width:calc(100vw/3);
         background-color: rgba(250, 235, 215, 0.250);
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 10rem;
-        line-height: 25px;
+        justify-content: space-around;
     }
 
     .subtitulo{
         display: flex;
+        width: 100vw;
         margin-top: 25px;
         margin-left: 2rem;
         margin-bottom: 10px;
         font-size: 2.3rem;
         justify-content: center;
     }
+
+    .nvg{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .
+
+    .div1{
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw/3);
+        
+        align-items: center;
+        gap: 1rem;
+     }
 
     #s1{
         color: rgb(90, 119, 75);
@@ -308,20 +337,26 @@
             <h1>Cantinho das Flores</h1>
         </div>
         <div class="line"></div>
-        <div id="home"></div>
-        <div id="secao1">
-            <h2 id="s1" class="subtitulo">Quem somos?</h2>
-
-            <p class="descricao">Somos uma floricultura familiar que tem como o objetivo vender flores, arranjos, vasos e decorações. Um serviço de alta qualidade, preparado manualmente e unicamente pra você usufruir. Tudo em nossa loja é preparado com carinho e amor para nossos clientes.
-                Para mais informações, acesse os contatos no rodapé!
-                Ficaremos felizes em atendê-lo(a)!</p>
-
-            <h2 id="s1" class="subtitulo">Como navegar em nosso site:</h2>
-
-            <p class="descricao">Para escolher seu(s) produto(s), navegue pelo nosso site através de diversas fotos, descrições e recomendações feitas à você. Selecione aqueles que gostar mais e adicione ao carrinho. 
-                Depois disso é só finalizar a compra, clicando no ícone acima e à direita.
-                Seu(s) produto(s) chegará(ão) em sua casa em menos de uma semana!</p>
+        <div id="home">
+            <p id="pginicial">Cantinho das Flores</p>
         </div>
+        <div id="secao1">
+            <div class="div1">
+                <div class="qs">
+                    <h2 id="s1" class="subtitulo">Quem somos?</h2>
+                    <p class="descricao">Somos uma floricultura familiar que tem como o objetivo vender flores, arranjos, vasos e decorações. Um serviço de alta qualidade, preparado manualmente e unicamente pra você usufruir. Tudo em nossa loja é preparado com carinho e amor para nossos clientes.
+                        Para mais informações, acesse os contatos no rodapé!
+                        Ficaremos felizes em atendê-lo(a)!</p>
+                </div>
+                <div class="nvg">
+                    <h2 id="s1" class="subtitulo">Como navegar em nosso site:</h2>
+                    <p class="descricao">Para escolher seu(s) produto(s), navegue pelo nosso site através de diversas fotos, descrições e recomendações feitas à você. Selecione aqueles que gostar mais e adicione ao carrinho.
+                        Depois disso é só finalizar a compra, clicando no ícone acima e à direita.
+                        Seu(s) produto(s) chegará(ão) em sua casa em menos de uma semana!</p>
+                            </div>
+                </div>
+            </div>
+
         <div id="secao2">
             <h2 id="s2" class="subtitulo">Buquês e Arranjos</h2>
             <div class="sec1">
