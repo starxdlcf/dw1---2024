@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>artigo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <style>
 
@@ -148,9 +149,21 @@
 
     #contatos{
         border: .0625rem;
-        height: 15vh;
+        height: 10vh;
         width: 100vw;
-        background-color: var(--cor4)
+        background-color: var(--cor4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato-box{
+        height: 50px;
+        width: 50px;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        
     }
 
     .descricao{
@@ -170,7 +183,7 @@
 
     .subtitulo{
         display: flex;
-        margin-top: 30px;
+        margin-top: 25px;
         margin-left: 2rem;
         margin-bottom: 10px;
         font-size: 2.3rem;
@@ -183,12 +196,15 @@
     #s2{
         color: rgba(217, 75, 75, 0.799);
     }
+    #s3{
+        color: rgba(162, 59, 59, 0.873);
+    }
 
     .img{
         border-radius: 2rem;
         max-width: 250px;
         max-height: 250px;
-        box-shadow: 0px 7px rgba(212, 83, 83, 0.799);
+        box-shadow: 0px 7px rgb(212, 159, 99);
     }
      .sec{
         display: flex;
@@ -231,12 +247,49 @@
         font-weight: bold;
         /* margin-left: 110px;
         margin-right: 160px;
-        margin-top: 25px; */
         /* text-align: center; */
         text-decoration: underline;
         display: flex;
+        margin-top: 25px;
         justify-content: space-around;
         flex-direction: row;
+        color: rgba(217, 75, 75, 0.799);
+    }
+
+    .titimgb{
+        border: 0px;
+        width: 100vw;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+        display: flex;
+        margin-top: 25px;
+        justify-content: space-around;
+        flex-direction: row;
+        color: rgba(162, 59, 59, 0.873);
+
+    }
+
+    .email{
+        font-size: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .descricaaao{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .i{
+        font-size: 30px;
+        color: black;
+    }
+
+    .imgsec3{
+        border-radius: 2rem;
+        max-width: 250px;
+        max-height: 250px;
+        box-shadow: 0px 7px rgba(217, 75, 75, 0.799);
     }
 
 </style>
@@ -275,46 +328,115 @@
                 <div class="sec secimg1">
                     <div class="img1">
                         <img class="img" src="https://static.giulianaflores.com.br/images/product/22999gg.jpg?ims=405x405">
-                        <p>Flores do Campo</p>
+                        <p class="titimg">Flores do Campo</p>
                     </div>
                     <div class="descricaaao">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quam sunt aliquam? Laudantium laborum similique placeat provident optio quos nemo, suscipit rem. Eos accusantium amet corrupti natus. Id, soluta quos!</p>
                     </div>
-                    <div class="botaaao">
-                        <a href="#secao1">123</a>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
                     </div>
                 </div>
-                <div class="sec">
-                    <img class="img" src="https://static.giulianaflores.com.br/images/product/25701gg.jpg?ims=405x405">
-                    <p>Margaridas</p>
+                <div class="sec secimg1">
+                    <div class="img1"><img class="img" src="https://static.giulianaflores.com.br/images/product/25701gg.jpg?ims=405x405">
+                        <p class="titimg">Margaridas</p>
+                    </div>
+                    <div class="descricaaao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste dicta ex quidem cupiditate eligendi mollitia quaerat dolor similique natus perspiciatis corporis, iure debitis. Quaerat eligendi unde corrupti beatae temporibus?</p>
+                    </div>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
+                    </div>
                 </div>
-                <div class="sec">
-                    <img class="img" src="https://static.giulianaflores.com.br/images/product/21864gg.jpg?ims=405x405">
-                    <p>Astromélias</p>
+                <div class="sec secimg1">
+                    <div class="img1">
+                        <img class="img" src="https://static.giulianaflores.com.br/images/product/21864gg.jpg?ims=405x405">
+                        <p class="titimg">Astromélias</p>
+                    </div>
+                    <div class="descricaaao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores quia molestiae necessitatibus? Consectetur, officiis! Accusamus, hic architecto qui ipsam, veritatis repudiandae sed sunt, recusandae temporibus quibusdam aliquam. Saepe, veritatis.</p>
+                    </div>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
+                    </div>
                 </div>
-                <div class="sec">
-                    <img class="img" src="https://static.giulianaflores.com.br/images/product/24910gg.jpg?ims=405x405">
-                    <p>Flores Silvestres</p>
+                <div class="sec secimg1">
+                    <div class="img1">
+                        <img class="img" src="https://static.giulianaflores.com.br/images/product/24910gg.jpg?ims=405x405">
+                        <p class="titimg">Flores Silvestres</p>
+                    </div>
+                    <div class="descricaaao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus recusandae cupiditate neque autem est cum! Ipsam fuga quis modi facere, non ex labore voluptatem! Sit, sed tempore? Dicta, harum!</p>
+                    </div>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
+                    </div>
                 </div>
             </div>
-             <!--
-
-            <div>
-                <img class="img" src="https://static.giulianaflores.com.br/images/product/22999gg.jpg?ims=405x405">
-                <img class="img" src="https://static.giulianaflores.com.br/images/product/25701gg.jpg?ims=405x405">
-                <img class="img" src="https://static.giulianaflores.com.br/images/product/21864gg.jpg?ims=405x405">
-                <img class="img" src="https://static.giulianaflores.com.br/images/product/24910gg.jpg?ims=405x405">
-            </div>
-            <div class="titimg">
-                <p>Flores do Campo</p>
-                <p>Margaridas</p>
-                <p>Astromélias</p>
-                <p>Flores Silvestres</p>
-            </div> -->
         </div>
-        <div id="secao3"></div>
+        <!-- hdunjnnkknsnkcsnksanksnksnksaknasknlankankankaknaknkankna -->
+        <div id="secao3">
+            <h2 id="s3" class="subtitulo"> ♥ Especial Dia dos Namorados ♥</h2>
+            <div class="sec1">
+                <div class="sec secimg1">
+                    <div class="img1">
+                        <img class="imgsec3" src="https://static.giulianaflores.com.br/images/product/rs-2064-2798-0.jpg?ims=405x405">
+                        <p class="titimgb">Kit Romântico</p>
+                    </div>
+                    <div class="descricaaao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quam sunt aliquam? Laudantium laborum similique placeat provident optio quos nemo, suscipit rem. Eos accusantium amet corrupti natus. Id, soluta quos!</p>
+                    </div>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
+                    </div>
+                </div>
+                <div class="sec secimg1">
+                    <div class="img1"><img class="imgsec3" src="https://static.giulianaflores.com.br/images/product/16030gg.jpg?ims=405x405">
+                        <p class="titimgb">Buquê de Rosas</p>
+                    </div>
+                    <div class="descricaaao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iste dicta ex quidem cupiditate eligendi mollitia quaerat dolor similique natus perspiciatis corporis, iure debitis. Quaerat eligendi unde corrupti beatae temporibus?</p>
+                    </div>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
+                    </div>
+                </div>
+                <div class="sec secimg1">
+                    <div class="img1">
+                        <img class="imgsec3" src="https://static.giulianaflores.com.br/images/product/rs-2064-40754-0.jpg?ims=405x405">
+                        <p class="titimgb">Buquê de Rosas Ornamentado</p>
+                    </div>
+                    <div class="descricaaao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores quia molestiae necessitatibus? Consectetur, officiis! Accusamus, hic architecto qui ipsam, veritatis repudiandae sed sunt, recusandae temporibus quibusdam aliquam. Saepe, veritatis.</p>
+                    </div>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
+                    </div>
+                </div>
+                <div class="sec secimg1">
+                    <div class="img1">
+                        <img class="imgsec3" src="https://static.giulianaflores.com.br/images/product/rs-2064-40765-0.jpg?ims=405x405">
+                        <p class="titimgb">Buquê de Girassóis e Rosas</p>
+                    </div>
+                    <div class="descricaaao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus recusandae cupiditate neque autem est cum! Ipsam fuga quis modi facere, non ex labore voluptatem! Sit, sed tempore? Dicta, harum!</p>
+                    </div>
+                    <div class="botaaao i">
+                        <a href="#secao1"><i class="bi bi-cart-check-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="contatos">/</div>
+    <div id="contatos">
+        <div class="contato-box-a">
+            <div class="email">
+                <a href="#secao1"id="email"><i class="bi bi-envelope-at-fill" ></i></a>
+                <a href="#home" id="email"><i class="bi bi-instagram"></i></a>
+                <a href="#home" id="email"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
