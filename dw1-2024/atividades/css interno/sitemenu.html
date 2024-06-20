@@ -63,7 +63,7 @@
         margin-top: 64px;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
-        margin-left: 18vw;
+        margin-left: 21vw;
         height: 56px;
         width: 60vw;
         background-color: var(--cormenu);
@@ -160,6 +160,7 @@
         padding: 10px;
         display: flex;
         justify-content: center;
+        align-items: center;
         text-align: center;
         margin-left: 10rem;
         line-height: 25px;
@@ -167,15 +168,44 @@
 
     .subtitulo{
         display: flex;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-left: 2rem;
         margin-bottom: 10px;
-        font-size: 2rem;
+        font-size: 2.3rem;
         justify-content: center;
     }
 
     #s1{
         color: rgb(90, 119, 75);
+    }
+    #s2{
+        color: rgba(217, 75, 75, 0.799);
+    }
+
+    .img{
+        border-radius: 2rem;
+        max-width: 250px;
+        max-height: 250px;
+        display: inline-block;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 40px;
+        box-shadow: 0px 7px rgba(212, 83, 83, 0.799);
+    }
+
+    .titimg{
+        border: 0px;
+        width: 250px;
+        font-size: 23px;
+        font-weight: bold;
+        margin-left: 110px;
+        margin-right: 160px;
+        margin-top: 25px;
+        text-align: center;
+        text-decoration: underline;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 
 </style>
@@ -198,9 +228,32 @@
         <div id="secao1">
             <h2 id="s1" class="subtitulo">Quem somos?</h2>
 
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere earum odit doloremque explicabo nemo officiis voluptatem tempore. Labore reiciendis voluptate et placeat aperiam alias velit molestias, nulla aliquid vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate voluptatibus ut voluptates magnam explicabo debitis blanditiis recusandae modi dignissimos aut suscipit cum, totam quia reiciendis harum ab possimus. Porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident obcaecati, enim est reiciendis harum minima dolor quos accusantium eum, quia voluptatum amet cupiditate? Placeat provident delectus incidunt reprehenderit quam?</p>
+            <p class="descricao">Somos uma floricultura familiar que tem como o objetivo vender flores, arranjos, vasos e decorações. Um serviço de alta qualidade, preparado manualmente e unicamente pra você usufruir. Tudo em nossa loja é preparado com carinho e amor para nossos clientes.
+                Para mais informações, acesse os contatos no rodapé!
+                Ficaremos felizes em atendê-lo(a)!</p>
+
+            <h2 id="s1" class="subtitulo">Como navegar em nosso site:</h2>
+
+            <p class="descricao">Para escolher seu(s) produto(s), navegue pelo nosso site através de diversas fotos, descrições e recomendações feitas à você. Selecione aqueles que gostar mais e adicione ao carrinho. 
+                Depois disso é só finalizar a compra, clicando no ícone acima e à direita.
+                Seu(s) produto(s) chegará(ão) em sua casa em menos de uma semana!</p>
         </div>
-        <div id="secao2"></div>
+        <div id="secao2">
+            <h2 id="s2" class="subtitulo">Buquês e Arranjos</h2>
+
+            <div>
+                <img class="img" src="https://static.giulianaflores.com.br/images/product/22999gg.jpg?ims=405x405">
+                <img class="img" src="https://static.giulianaflores.com.br/images/product/25701gg.jpg?ims=405x405">
+                <img class="img" src="https://static.giulianaflores.com.br/images/product/21864gg.jpg?ims=405x405">
+                <img class="img" src="https://static.giulianaflores.com.br/images/product/24910gg.jpg?ims=405x405">
+            </div>
+            <div>
+                <p class="titimg">Flores do Campo</p>
+                <p class="titimg">Margaridas</p>
+                <p class="titimg">Astromélias</p>
+                <p class="titimg">Flores Silvestres</p>
+            </div>
+        </div>
         <div id="secao3"></div>
     </div>
     <div id="contatos">/</div>
