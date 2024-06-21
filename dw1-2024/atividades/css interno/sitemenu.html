@@ -5,316 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>artigo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-<style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-   
-
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-
-    :root{
-            --cormenu: rgb(114, 158, 161);
-            --corhome: rgb(159, 189, 160);
-            --cor1: rgb(181, 189, 137);
-            --cor2: rgb(223, 190, 153);
-            --cor3: rgb(230, 168, 150);
-            --cor4: rgb(236, 145, 146);
-            --corbotao: rgb(85, 118, 120);
-            --corlogo: 
-            
-            --titulos: "Playfair Display";
-            --logo: "Parisienne";
-    }
-
-    html{
-        scroll-behavior: smooth;
-    }
-
-    .container{
-        background-color: black;
-    }
-
-    ul.menu li{
-       display: inline-block; 
-    }
-
-    .logo{
-        border: .0625rem;
-        height: 64px;
-        width: 100vw;
-        background-color: var(--corbotao);
-        position: fixed;
-        font-family: var(--logo);
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: antiquewhite;
-    }
-
-    #pginicial{
-        font-family: var(--logo);
-        font-size: 6rem;
-        color: blanchedalmond;
-        text-shadow: 5px 5px black;
-    }
+    <link rel="stylesheet" href="/dw1-2024/atividades/css externo/sitemenu.css">
 
 
-    .menu{
-        border: 1px;
-        margin-top: 64px;
-        border-bottom-left-radius: 16px;
-        border-bottom-right-radius: 16px;
-        margin-left: 21vw;
-        height: 56px;
-        width: 60vw;
-        background-color: var(--cormenu);
-        position: fixed;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.25rem;
-    }
-
-    .line{
-        border: .0625rem solid var(--cormenu);
-        margin-top: 64px;
-        height: .0625rem;
-        width: 100vw;
-        position: fixed;
-    }
-
-    .botao{
-        border: .0625rem solid rgb(85, 118, 120);
-        border-radius: .3125rem;
-        width: 96px;
-        text-align: center;
-        background-color: var(--corbotao);
-        font-family: var(--titulos);
-        font-size: 19.2px
-    }
-
-    li a{
-        color: black;
-        text-decoration: none;
-    }
-
-    .menu .botao:hover{
-        transition: 0.5s;
-        color: antiquewhite;
-        background-color: black;
-    }
-    
-    li a{
-        transition: 0.5s;
-        color: antiquewhite;
-    }
-
-    #home{
-        border: .0625rem;
-        height: 100vh;
-        width: 100vw;
-        background-image: url(https://www.800flower.ae/cdn/shop/articles/find-a-flower-shop-near-me-your-local-blooms-await-800-flower-dubai_1.jpg?v=1690118782);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  
-
-    #secao1{
-        border: .0625rem;
-        height: 100vh;
-        width: 100vw;
-        padding-top: 128px;
-        background-color: var(--cor1);
-        display: flex;
-    }
-
-    #secao2{
-        border: .0625rem;
-        height: 100vh;
-        width: 100vw;
-        padding-top: 128px;
-        background-color: var(--cor2);
-        display: flex;
-        flex-direction: column;
-    }
-
-    #secao3{
-        border: .0625rem;
-        height: 100vh;
-        width: 100vw;
-        padding-top: 128px;
-        background-color: var(--cor3);
-    }
-
-    #contatos{
-        border: .0625rem;
-        height: 10vh;
-        width: 100vw;
-        background-color: var(--cor4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contato-box{
-        height: 50px;
-        width: 50px;
-        color: black;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .descricao{
-        border: 1px;
-        border-radius: 1rem;
-        height: 30vh;
-        width: 30vw;
-        background-color: rgba(250, 235, 215, 0.250);
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        /* justify-content: space-around; */
-    }
-
-    .subtitulo{
-        display: flex;
-        width: 100vw;
-        margin-top: 25px;
-        margin-left: 2rem;
-        margin-bottom: 8px;
-        font-size: 2.3rem;
-        justify-content: center;
-    }
-
-    
-
-    .divi{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        line-height: 25px;
-        gap: 1rem;
-     }
-
-    #s1{
-        color: rgb(90, 119, 75);
-    }
-    #s2{
-        color: rgba(217, 75, 75, 0.799);
-    }
-    #s3{
-        color: rgba(162, 59, 59, 0.873);
-    }
-
-    .img{
-        border-radius: 2rem;
-        max-width: 250px;
-        max-height: 250px;
-        box-shadow: 0px 7px rgb(212, 159, 99);
-    }
-     .sec{
-        display: flex;
-        flex-direction: column;
-        width: calc(100vw/4);
-        
-        align-items: center;
-        gap: 1rem;
-     }
-     .img1{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 1rem;
-     }
-     .sec1{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-     }
-     .secimg1{
-        display: flex;
-        justify-content: space-around;
-     }
-     .botaaao{
-        border: .0625rem solid rgb(85, 118, 120);
-        border-radius: .3125rem;
-        width: 96px;
-        text-align: center;
-        background-color: var(--corbotao);
-        font-family: var(--titulos);
-        font-size: 19.2px
-     }
-
-    .titimg{
-        border: 0px;
-        width: 100vw;
-        font-size: 23px;
-        font-weight: bold;
-        /* margin-left: 110px;
-        margin-right: 160px;
-        /* text-align: center; */
-        text-decoration: underline;
-        display: flex;
-        margin-top: 25px;
-        justify-content: space-around;
-        flex-direction: row;
-        color: rgba(217, 75, 75, 0.799);
-    }
-
-    .titimgb{
-        border: 0px;
-        width: 100vw;
-        font-size: 23px;
-        font-weight: bold;
-        text-decoration: underline;
-        display: flex;
-        margin-top: 25px;
-        justify-content: space-around;
-        flex-direction: row;
-        color: rgba(162, 59, 59, 0.873);
-
-    }
-
-    .email{
-        font-size: 1.5rem;
-        gap: 1.5rem;
-    }
-
-    .descricaaao{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .i{
-        font-size: 30px;
-        color: black;
-    }
-
-    .imgsec3{
-        border-radius: 2rem;
-        max-width: 250px;
-        max-height: 250px;
-        box-shadow: 0px 7px rgba(217, 75, 75, 0.799);
-    }
-
-</style>
 </head>
 <body>
 
@@ -334,7 +27,7 @@
             <p id="pginicial">Cantinho das Flores</p>
         </div>
         <div id="secao1">
-            <div class="divi">
+            <!-- <div class="divi"> -->
                 <div class="qs">
                     <h2 id="s1" class="subtitulo">Quem somos?</h2>
                     <p class="descricao">Somos uma floricultura familiar que tem como o objetivo vender flores, arranjos, vasos e decorações. Um serviço de alta qualidade, preparado manualmente e unicamente pra você usufruir. Tudo em nossa loja é preparado com carinho e amor para nossos clientes.
@@ -342,14 +35,15 @@
                         Ficaremos felizes em atendê-lo(a)!</p>
                 </div>
                 <div class="nvg">
-                    <h2 id="s1" class="subtitulo">Como navegar em nosso site:</h2>
+                    <h2 id="s1" class="subtitulo">Como navegar em nosso site?</h2>
                     <p class="descricao">Para escolher seu(s) produto(s), navegue pelo nosso site através de diversas fotos, descrições e recomendações feitas à você. Selecione aqueles que gostar mais e adicione ao carrinho.
                         Depois disso é só finalizar a compra, clicando no ícone acima e à direita.
                         Seu(s) produto(s) chegará(ão) em sua casa em menos de uma semana!</p>
-                            </div>
                 </div>
-            </div>
+            <!-- </div> -->
+        </div>
 
+        <!-- hdunjnnkknsnkcsnksanksnksnksaknasknlankankankaknaknkankna -->
         <div id="secao2">
             <h2 id="s2" class="subtitulo">Buquês e Arranjos</h2>
             <div class="sec1">
@@ -402,7 +96,7 @@
                 </div>
             </div>
         </div>
-        <!-- hdunjnnkknsnkcsnksanksnksnksaknasknlankankankaknaknkankna -->
+
         <div id="secao3">
             <h2 id="s3" class="subtitulo"> ♥ Especial Dia dos Namorados ♥</h2>
             <div class="sec1">
@@ -455,6 +149,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
     <div id="contatos">
         <div class="contato-box-a">
