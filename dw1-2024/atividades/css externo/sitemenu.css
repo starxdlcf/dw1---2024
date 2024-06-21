@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -8,7 +8,6 @@
     box-sizing: border-box;
     overflow-x: hidden;
     text-align: justify;
-    
 }
 
 :root{
@@ -19,8 +18,9 @@
         --cor3: rgb(230, 168, 150);
         --cor4: rgb(236, 145, 146);
         --corbotao: rgb(85, 118, 120);
-        --corlogo: 
+        --corlogo: blanchedalmond;
         
+        --fontepadrao: "Montserrat", sans-serif, bold;
         --titulos: "Playfair Display";
         --logo: "Parisienne";
 }
@@ -73,6 +73,7 @@ ul.menu li{
     justify-content: space-around;
     align-items: center;
     font-size: 1.25rem;
+    font-family: var(--fontepadrao);
 }
 
 .line{
@@ -187,8 +188,9 @@ li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-     justify-content: space-around; 
+    justify-content: space-around; 
     font-size: large;
+    font-family: var(--fontepadrao);
     
  } 
 
@@ -291,6 +293,7 @@ li a{
 
 .descricaaao{
     margin: 2rem;
+    font-family: var(--fontepadrao);
 }
 
 .i{
