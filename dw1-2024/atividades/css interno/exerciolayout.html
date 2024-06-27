@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br   ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background-color: #3B5BDB;
+        }
+        li{
+            list-style: none;
+        }
+        .cartao{
+            background-color: white;
+            height: 500px; 
+            align-self: center;
+            border-radius: 15px;
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container{
+            background-color: #3B5BDB;
+            display: flex;
+            width: 100vw;
+            justify-content: space-around;
+        }
+        h1{
+            text-align: center;
+            height: 130px;
+            width: 100vw;
+            color: white;
+            margin-top: 90px;
+            font-size: 4em;
+        }
+        .nome{
+            font-weight: bolder;
+            font-size: 2.2em;
+            padding-top: 9px;
+            text-align: center;
+            letter-spacing: 0.01px;
+        }
+        .preco{
+            color: #4664DD;
+            text-align: center;
+            font-size: 3em;
+            margin-top: 30px;
+            padding: 15px;
+            font-weight: bolder;
+        }
+        .legenda{
+            color: grey;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .adquirir{
+            text-align: center;
+            color: white;
+            background-color: #3B5BDB;
+            width: 200px;
+            margin-top: 40px;
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding: 10px;
+
+        }
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Planos</h1>
+    <div class="container">
+
+        <div class="cartao">            
+            <div class="nome">Starter</div>
+            <div class="preco">R$ 50,00</div>
+            <div class="legenda">
+                <ul>
+                    <li>1 usuário</li>
+                    <li>100 GB de armazenamento</li>
+                    <li>Suporte por email</li>
+                </ul>
+            </div>
+            <div class="adquirir">
+                <span>Comprar</span>
+            </div>
+        </div>
+        <div class="cartao">
+            
+            <div class="nome">Personal</div>
+            <div class="preco">R$ 100,00</div>
+            <div class="legenda">
+                <ul>
+                    <li>10 usuários</li>
+                    <li>1 TB de armazenamento</li>
+                    <li>Suporte por email</li>
+                </ul>
+            </div>
+            <div class="adquirir">
+                <span>Comprar</span>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="nome">Team</div>
+            <div class="preco">R$ 300,00</div>
+            <div class="legenda">
+                <ul>
+                    <li>50 usuários</li>
+                    <li>5 TB de armazenamento</li>
+                    <li>Suporte por email</li>
+                </ul>
+            </div>
+            <div class="adquirir">
+                <span>Comprar</span>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
