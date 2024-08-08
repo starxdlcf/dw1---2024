@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+<style>
+
+    table {
+        width: 25rem;
+        border-collapse: collapse;
+    }
+    
+    tr{
+        background-color: rgb(235, 235, 245);
+    }
+
+    thead {
+        background-color: gray;
+    }
+    
+    .tabela{
+        padding: 1rem;
+        border: solid 0.5px black;  
+    }
+    
+    .numero{
+        text-align: right;
+    }
+    
+    .destaque{
+        background-color: rgb(230, 200, 30);
+        font-weight: bold;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgb(137, 137, 137);
+    }
+
+</style>
+
+</head>
+<body>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th class="tabela">Estado</th>
+                <th class="tabela">População</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            
+            <tr>
+                <td class="tabela">Acre</td>
+                <td class="tabela numero">830.018</td>
+            </tr>
+        
+            <tr>
+                <td class="tabela">Alagoas</td>
+                <td class="tabela numero">3.127.683</td>
+            </tr>
+
+            <tr>
+                <td class="tabela">Acre</td>
+                <td class="tabela numero">830.018</td>
+            </tr>
+        
+            <tr>
+                <td class="tabela">Alagoas</td>
+                <td class="tabela numero">3.127.683</td>
+            </tr>
+
+            <tr>
+                <td class="tabela">Acre</td>
+                <td class="tabela numero destaque">830.018</td>
+            </tr>
+        
+            <tr>
+                <td class="tabela">Alagoas</td>
+                <td class="tabela numero">3.127.683</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td class="tabela">C1</td>
+                <td class="tabela numero">C2</td>
+            </tr>
+        </tfoot>
+        <caption>Tabela com os estados do Brasil</caption>
+    </table>
+    
+</body>
+</html>
