@@ -9,22 +9,26 @@
 
         :root{
             --bordas: solid 0.17rem black;
-            --spacing: 6rem;
+            --spacing: 7rem;
+            --height: 2rem;
         }
 
         td{
             border: var(--bordas);
             width: var(--spacing);
+            height: var(--height);
         }
         
         th{
             text-align: center;
             border: var(--bordas);
             width: var(--spacing);
+            height: var(--height);
         }
 
         #spacing{
-            padding-left: 6rem;
+            width: var(--spacing);
+            border: none;
         }
 
     </style>
@@ -35,6 +39,7 @@
     <table>
         <thead>
             <tr>
+                <th id="spacing"></th>
                 <th>Segunda</th>
                 <th>Terça</th>
                 <th>Quarta</th>
