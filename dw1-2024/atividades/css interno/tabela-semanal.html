@@ -3,98 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Semana</title>
+    <title>Document</title>
+</head>
+<div class="container">
 
-    <style>
 
-        :root{
-            --bordas: solid 0.17rem black;
-            --spacing: 7rem;
-            --height: 2rem;
-        }
-
-        td{
-            border: var(--bordas);
-            width: var(--spacing);
-            height: var(--height);
-        }
+<body>
+    <table>
+         <tr>
+            <td class="td1"></td>
+            <td class="dias">Segunda</td>
+            <td class="dias">Terça</td>
+            <td class="dias">Quarta</td>
+            <td class="dias">Quinta</td>
+            <td class="dias">Sexta</td>
+            <td class="dias">Sabado</td>
+            <td class="dias">Domingo</td>
+            
+        </tr>   
+        <tr>
+            <td class="refeicoes">
+                <img src="cafe.png" width="25px">
+                Café 
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="refeicoes">
+                <img src="almoco_janta.png" width="25px">
+                Almoço
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="refeicoes">
+                <img src="cafe.png" width="25px">
+                Café
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="refeicoes">
+                <img src="almoco_janta.png" width="25px">
+                Janta
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
         
-        th{
+    </table>
+</div>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            font-family:   cursive;
+            align-items: center;
+        }
+        th,td {
+            border:2px solid black;
+            font-size: 20px;
+        }
+        .dias{
             text-align: center;
-            border: var(--bordas);
-            width: var(--spacing);
-            height: var(--height);
+        }
+        td{
+            width: 120px;
+
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            table-layout: fixed;
         }
 
-        #spacing{
-            width: var(--spacing);
+        .td1{
             border: none;
         }
-
+        .refeicoes{
+            padding-left: 15px;
+            width: 180px !important;
+        }
     </style>
-
-</head>
-<body>
-
-    <table>
-        <thead>
-            <tr>
-                <th id="spacing"></th>
-                <th>Segunda</th>
-                <th>Terça</th>
-                <th>Quarta</th>
-                <th>Quinta</th>
-                <th>Sexta</th>
-                <th>Sábado</th>
-                <th>Domingo</th>
-            </tr>
-        </thead>
-
-        <tr>
-            <th>Café</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <th>Almoço</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <th>Café</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <th>Jantar</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-    </table>
-    
 </body>
 </html>
