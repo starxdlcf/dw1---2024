@@ -4,31 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        h2{
+            padding-bottom: 8px;
+        }
+
+        button{
+            width: 15rem;
+            color: white;
+            background-color: black;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .principal{
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            height: 100vh;
+        }
+
+        .imagem{
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .caixalogin{
+
+            border: 3px solid rebeccapurple;
+            height: 18rem;
+        }
+
+        input{
+            border: .0625rem solid lightslategray;
+            width: 15rem;
+            height: 1.5rem;
+        }
+        
+        .entrarcom{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .cw{
+            border: .0625rem solid lightslategray;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo{
+            width: 25px;
+        }
+
+        #google{
+            margin-right: 5px;
+        }
+        #apple{
+            margin-right: 5px;
+        }
+        #face{
+            margin-right: 10px;
+        }
+
+        .termos{
+            border: solid 3px rebeccapurple;
+        }
+
+        
+
+    </style>
 </head>
 <body>
 
-    <div class="principal">
-        <div class="caixalogin">
-            <h2>Sign in or create an account</h2>
-            <h3>Welcome back! Please enter your details.</h3>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="E-mail adress">
+    <div id="container">
+        <div class="principal">
+            <div class="caixalogin">
+                <h2>Sign in or create an account</h2>
+                <h4>Welcome back! Please enter your details.</h4>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail adress">
+                <button type="submit">Continue</button>
+            </div>
+            <div class="or"></div>
+            <div class="entrarcom">
+                <div class="cw">
+                    <img id="google" class="logo" src="https://img.icons8.com/?size=512&id=17949&format=png" alt="">
+                    <p>Continue with Google</p>
+                </div>
+                <div class="cw">
+                    <img id="apple" class="logo" src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="">
+                    <p>Continue with Apple</p>
+                </div>
+                <div id="face" class="cw">
+                    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="">
+                    <p>Continue with Facebook</p>
+                </div>
+            </div>
+            <div class="termos">
+                <p>By signing in or creating an account, you agree with our <span>Terms & Conditions</span> and <span>Privacy Statement</span>.</p>
+            </div>
         </div>
-
-        <div class="or"></div>
-
-        <div class="entrarcom">
-            <div id="google"></div>
-            <div id="apple"></div>
-            <div id="facebook"></div>
+        <div class="imagem">
+            <div class="legenda">
+                <p>"A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors." – Charles Baudelaire</p>
+            </div>
         </div>
-
-        <div class="termos"></div>
-    </div>
-
-
-    <div class="imagem">
-        <div class="legenda"></div>
     </div>
 
 
