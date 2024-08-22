@@ -7,19 +7,29 @@
 
     <style>
 
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
+            /* background-color: antiquewhite; */
         }
 
         :root{
-            --largurapadrao: 19rem;
+            --largurapadrao: 45%;
+            --fonte: "Urbanist", sans-serif;
+            --corborda: rgb(156, 150, 144);
         }
 
         h2{
             padding-bottom: 8px;
+            font-family: var(--fonte);
+        }
+
+        h5{
+            font-family: var(--fonte);
         }
 
         button{
@@ -28,7 +38,8 @@
             background-color: black;
             border-color: black;
             margin-top: 15px;
-            height: 1.5rem;
+            height: 90%;
+            font-family: var(--fonte);
         }
 
         #container{
@@ -62,20 +73,24 @@
             display: flex;
             flex-direction: column;
             width: var(--largurapadrao);
+            gap: 10px;
         }
-
+        
         .centrotexto{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-
+        
         input{
-            border: .0625rem solid lightslategray;
+            border: .0625rem solid var(--corborda);
             width: 100%;
             height: 1.5rem;
             margin-top: 15px;
+            font-family: var(--fonte);
+            height: 90%;
+            padding-left: 3%;
         }
         
         .entrarcom{
@@ -84,21 +99,32 @@
             flex-direction: column;
             width: var(--largurapadrao);
             gap: 0.8rem;
+            font-family: var(--fonte);
         }
         
         .cw{
-            border: .0625rem solid lightslategray;
+            border: .0625rem solid var(--corborda);
             display: flex;
             justify-content: center;
             width: 100%;
             gap: 1rem;
         }
 
+        .cw:hover{
+            background-color: black;
+            color: white;
+            transition-duration: 0.5s;
+        }
+
+        .cw.logo:hover{
+            background-image: var("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQesa2rF2WhrA7Sl3iIoznL-gFpA0y0GB-tQ&s");
+        }
+
         .centralizarlogo{
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            margin: 1%;
         }
 
         .centralizartexto{
@@ -108,41 +134,60 @@
             
         }
 
-        #google{
-            margin-right: 7px;
-        }
-        #apple{
-            margin-right: 20px;
-        }
-        #face{
-            margin-right: 1rem;
-        }
-
+        
         .termos{
             width: var(--largurapadrao);
             text-align: center;
+            font-family: var(--fonte);
         }
 
         .pic{
             display: flex;
             align-items: flex-end;
-            background-image: url(biblioteca.jpg);
+            background-image: url(https://images.pexels.com/photos/16978832/pexels-photo-16978832/free-photo-of-livros-menina-garota-moca.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
             background-size: cover;
-            width: 95%;
-            height: 95%;
-            border-radius: 3rem;
+            width: 97%;
+            height: 97%;
+            border-radius: 2rem;
         }
 
         .legenda{
             color: aliceblue;
             font-size: 25px;
             text-align: center;
-            margin: 50px;
+            margin-left: 50%;
+            margin-bottom: 10%;
+            margin-right: 8%;
+            background-color: rgba(0, 0, 0, 0);
+            font-family: var(--fonte);
+            font-weight: 400;
         }
 
         span{
             font-weight: bold;
             text-decoration: underline;
+        }
+
+        #or{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: var(--largurapadrao);
+            gap: 1rem;
+            margin-top: 10px;
+        }
+
+        .boxor{
+            border: 0.5px solid var(--corborda);
+            height: 2px;
+            width: 100%;
+            background-color: var(--corborda);
+        }
+
+        #one{
+            font-style: italic;
+            text-decoration: none;
         }
 
     </style>
@@ -160,7 +205,11 @@
                 <div class="center"><input type="email" placeholder="E-mail adress"></div>
                 <div class="center"><button type="submit">Continue</button></div>
             </div>
-            <div class="or">or</div>
+            <div id="or">
+                <p class="boxor"></p>
+                <p>or</p>
+                <p class="boxor"></p>
+            </div>
             <div class="entrarcom">
                 <div class="cw">
                     <div class="centralizarlogo">
@@ -171,7 +220,7 @@
                 </div>
                 <div class="cw">
                     <div class="centralizarlogo">
-                        <img class="logo" width="25px" src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt=""></div>
+                        <img class="logo" width="20px" id="apple" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Apple_logo_grey.svg" alt=""></div>
                     <div class="centralizartexto">
                         <p>Continue with Apple</p>
                     </div>
@@ -189,7 +238,7 @@
             </div>
         </div>
         <div class="imagem">
-            <div class="pic"><p class="legenda">"A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors." – Charles Baudelaire</p></div>
+            <div class="pic"><p class="legenda">"A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors." – <span id="one">Charles Baudelaire</span></p></div>
         </div>
     </div>
 
