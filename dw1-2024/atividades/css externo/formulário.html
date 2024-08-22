@@ -14,14 +14,21 @@
             scroll-behavior: smooth;
         }
 
+        :root{
+            --largurapadrao: 19rem;
+        }
+
         h2{
             padding-bottom: 8px;
         }
 
         button{
-            width: 15rem;
+            width: 100%;
             color: white;
             background-color: black;
+            border-color: black;
+            margin-top: 15px;
+            height: 1.5rem;
         }
 
         #container{
@@ -29,65 +36,114 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            width: 100vw;
         }
 
         .principal{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 50vw;
-            height: 100vh;
+            width: 50%;
+            height: 100%;
+            gap: 2rem;
         }
 
         .imagem{
-            align-items: flex-end;
-            justify-content: flex-end;
-            width: 50vw;
-            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
         }
 
         .caixalogin{
+            display: flex;
+            flex-direction: column;
+            width: var(--largurapadrao);
+        }
 
-            border: 3px solid rebeccapurple;
-            height: 18rem;
+        .centrotexto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         input{
             border: .0625rem solid lightslategray;
-            width: 15rem;
+            width: 100%;
             height: 1.5rem;
+            margin-top: 15px;
         }
         
         .entrarcom{
             display: flex;
+            justify-content: center;
             flex-direction: column;
+            width: var(--largurapadrao);
+            gap: 0.8rem;
         }
         
         .cw{
             border: .0625rem solid lightslategray;
-            margin: 5px;
             display: flex;
             justify-content: center;
+            width: 100%;
+            gap: 1rem;
         }
 
-        .logo{
-            width: 25px;
+        .centralizarlogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .centralizartexto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
         }
 
         #google{
-            margin-right: 5px;
+            margin-right: 7px;
         }
         #apple{
-            margin-right: 5px;
+            margin-right: 20px;
         }
         #face{
-            margin-right: 10px;
+            margin-right: 1rem;
         }
 
         .termos{
-            border: solid 3px rebeccapurple;
+            width: var(--largurapadrao);
+            text-align: center;
         }
 
-        
+        .pic{
+            display: flex;
+            align-items: flex-end;
+            background-image: url(biblioteca.jpg);
+            background-size: cover;
+            width: 95%;
+            height: 95%;
+            border-radius: 3rem;
+        }
+
+        .legenda{
+            color: aliceblue;
+            font-size: 25px;
+            text-align: center;
+            margin: 50px;
+        }
+
+        span{
+            font-weight: bold;
+            text-decoration: underline;
+        }
 
     </style>
 </head>
@@ -96,25 +152,36 @@
     <div id="container">
         <div class="principal">
             <div class="caixalogin">
-                <h2>Sign in or create an account</h2>
-                <h4>Welcome back! Please enter your details.</h4>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="E-mail adress">
-                <button type="submit">Continue</button>
+                <div>
+                    <h2>Sign in or create an account</h2>
+                    <h5>Welcome back! Please enter your details.</h5>
+                </div>
+                <div class="center"><input type="text" placeholder="Name"></div>
+                <div class="center"><input type="email" placeholder="E-mail adress"></div>
+                <div class="center"><button type="submit">Continue</button></div>
             </div>
-            <div class="or"></div>
+            <div class="or">or</div>
             <div class="entrarcom">
                 <div class="cw">
-                    <img id="google" class="logo" src="https://img.icons8.com/?size=512&id=17949&format=png" alt="">
-                    <p>Continue with Google</p>
+                    <div class="centralizarlogo">
+                        <img class="logo" width="25px" src="https://img.icons8.com/?size=512&id=17949&format=png" alt=""></div>
+                    <div class="centralizartexto">
+                        <p>Continue with Google</p>
+                    </div>
                 </div>
                 <div class="cw">
-                    <img id="apple" class="logo" src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="">
-                    <p>Continue with Apple</p>
+                    <div class="centralizarlogo">
+                        <img class="logo" width="25px" src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt=""></div>
+                    <div class="centralizartexto">
+                        <p>Continue with Apple</p>
+                    </div>
                 </div>
-                <div id="face" class="cw">
-                    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="">
-                    <p>Continue with Facebook</p>
+                <div class="cw">
+                    <div class="centralizarlogo">
+                        <img class="logo" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt=""></div>
+                    <div class="centralizartexto">
+                        <p>Continue with Facebook</p>
+                    </div>
                 </div>
             </div>
             <div class="termos">
@@ -122,9 +189,7 @@
             </div>
         </div>
         <div class="imagem">
-            <div class="legenda">
-                <p>"A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors." – Charles Baudelaire</p>
-            </div>
+            <div class="pic"><p class="legenda">"A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors." – Charles Baudelaire</p></div>
         </div>
     </div>
 
