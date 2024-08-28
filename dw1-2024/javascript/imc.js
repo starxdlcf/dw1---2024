@@ -5,16 +5,17 @@ let inputAltura = document.getElementById("altura")
 let divSaida = document.getElementById("saida")
 
 let botaocalcular = document.getElementById("calcular")
-botaocalcular.onclick = calculaImc
+botaocalcular.onclick = calculaImc()
 
 function calculaImc(){
+    console.log(inputAltura)
 
     //entradas
     let peso = Number(inputPeso.value)
-    let altura = Number(imputAltura.value)
+    let altura = Number(inputAltura.value)
 
     //saída
     let imc = peso/(altura*altura)
 
-    divsaida.innerText = imc
+    // divSaida.innerText = imc
 }
