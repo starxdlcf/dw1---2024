@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Tabler Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
-    />
-    <!-- Tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind</title>
-  </head>
-  <body>
-    <div class="flex bg-red w-screen h-screen">
-      <div>
-        <div>Tailwind</div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-screen h-screen flex">
+        <div class="w-1/5 h-screen bg-black text-white flex flex-col gap-10">
+            <div class="flex justify-center p-4 gap-2">
+                <img src="" alt="">
+                <h1 class="font-bold text-2xl">Tailwind</h1>
+            </div>
+            <div class="flex flex-col gap-1" >
+                <div class="pl-4 flex gap-2">
+                    <img src="" alt="">
+                    <p>Home</p>
+                </div>
+                <div class="pl-4 flex gap-2">
+                    <img src="" alt="">
+                    <p>Contato</p>
+                </div>
+                <div class="pl-4 flex gap-2">
+                    <img src="" alt="">
+                    <p>Sobre</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div>
-        <div>
-          <h1>Home</h1>
-          <p>Página inicial</p>
+        <div class="w-4/5 h-screen flex flex-col">
+            <div class="w-full bg-gray-700 flex flex-col pl-5">
+                <p class="font-bold text-lg text-gray-400 ">Home</p>
+                <p class="text-gray-500 text-md">Página inicial</p>
+            </div>
+            <div class="w-full bg-gray-800 h-full p-4">
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis placeat, consequatur ea quo officiis provident quas omnis, autem ab reiciendis fuga minima reprehenderit veniam a soluta magnam impedit pariatur.</p>
+            </div>
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa eos soluta laudantium facere veniam doloremque aut adipisci accusantium odio ad explicabo corrupti, incidunt perferendis error unde exercitationem fuga porro?</p>
-        </div>
-      </div>
     </div>
-
-
-
-    <div class="w-screen h-screen bg-blue-100 flex flex-col justify-center items-center gap-3" >
-      <i class="ti ti-brand-tailwind text-3xl"></i>
-      <span class="font-bold text-xl"> Aprendendo a usar Tailwind </span>
-    </div>
-  </body>
+    
+    
+</body>
 </html>
