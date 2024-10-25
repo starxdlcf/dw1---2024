@@ -1,4 +1,13 @@
-function reverseString(string){
+function isPalindrome(string){
+    let spString = string.split("");
+    let revString = spString.reverse();
+    let fString = revString.join("");
+
+    if(string == fString){
+        return true
+    } else{
+        return false
+    }
     
 }
 
