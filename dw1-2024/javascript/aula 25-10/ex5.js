@@ -4,14 +4,16 @@ function getInitials(string){
     let resposta;
     let contg = lista.length;
     let i = 0;
+    let r = 0
+    console.log(lista)
+    console.log(lista[0])
+    console.log(lista[0][0])
      while(i <= contg){
-        let palavra = lista[i];
-        let letra = palavra[0];
-        resposta += letra
+        resposta = lista[i][0]
+        r += resposta
         i++
      }
-     resposta = resposta.toString()
-     return resposta
+     return r
 
 }
 
